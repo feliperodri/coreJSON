@@ -1,14 +1,11 @@
-JSON_Iterate proof
+skipAnyScalar proof
 ==============
 
-This directory contains a memory safety proof for `JSON_Iterate`.
+This directory contains a memory safety proof for `skipAnyScalar`.
 The proof runs in a few seconds and provides 100% coverage.
 
 For this proof, the following functions are replaced with function contracts.
 These functions have separate proofs.
-* `skipAnyScalar`;
-* `skipCollection`;
-* `skipSpace`;
 * `skipString`.
 
 To run the proof.

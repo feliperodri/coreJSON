@@ -1,7 +1,7 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
 
-PROOF_UID=JSON_Iterate
+PROOF_UID=JSON_SearchConst
 CHECK_FUNCTION_CONTRACTS = $(PROOF_UID)
 HARNESS_FILE= $(PROOF_UID)_harness
 
@@ -9,10 +9,14 @@ DFCC_MODE = 1
 
 CBMC_OBJECT_BITS = 12
 
-EARLY_UNWINDSET += JSON_Iterate.0:$(CBMC_MAX_BUFSIZE)
+UNWINDSET += multiSearch.0:$(CBMC_MAX_QUERYKEYLENGTH)
+UNWINDSET += skipQueryPart.0:$(CBMC_MAX_QUERYKEYLENGTH)
 
+USE_FUNCTION_CONTRACTS += arraySearch
+USE_FUNCTION_CONTRACTS += objectSearch
 USE_FUNCTION_CONTRACTS += skipAnyScalar
 USE_FUNCTION_CONTRACTS += skipCollection
+USE_FUNCTION_CONTRACTS += skipDigits
 USE_FUNCTION_CONTRACTS += skipSpace
 USE_FUNCTION_CONTRACTS += skipString
 

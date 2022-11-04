@@ -1,15 +1,14 @@
-JSON_Iterate proof
+arraySearch proof
 ==============
 
-This directory contains a memory safety proof for `JSON_Iterate`.
+This directory contains a memory safety proof for `arraySearch`.
 The proof runs in a few seconds and provides 100% coverage.
 
 For this proof, the following functions are replaced with function contracts.
 These functions have separate proofs.
 * `skipAnyScalar`;
 * `skipCollection`;
-* `skipSpace`;
-* `skipString`.
+* `skipSpace`.
 
 To run the proof.
 * Add `cbmc`, `goto-cc`, `goto-instrument`, `goto-analyzer`, and `cbmc-viewer`
