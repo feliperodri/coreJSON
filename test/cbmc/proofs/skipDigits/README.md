@@ -1,7 +1,7 @@
-skipString proof
+skipDigits proof
 ==============
 
-This directory contains a memory safety proof for `skipString`.
+This directory contains a memory safety proof for `skipDigits`.
 The proof runs in a few seconds and provides 100% coverage.
 
 To run the proof.

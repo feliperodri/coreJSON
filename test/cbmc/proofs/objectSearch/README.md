@@ -1,7 +1,7 @@
-JSON_Iterate proof
+objectSearch proof
 ==============
 
-This directory contains a memory safety proof for `JSON_Iterate`.
+This directory contains a memory safety proof for `objectSearch`.
 The proof runs in a few seconds and provides 100% coverage.
 
 For this proof, the following functions are replaced with function contracts.
